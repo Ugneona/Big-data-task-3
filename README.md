@@ -70,20 +70,31 @@ All histograms have been uploaded to the histograms folder. Each of the four his
 
 ### Full range histogram 
 
-In full range histogram plot we can see, that there are 60 000s difference between two subsequent time points at most. However, there are apprx. less than 250 000 time delta of more than 10 000 s.
+In the full range histogram plot, we can see that there is a maximum difference of 60,000 seconds between two subsequent time points. However, there are approximately fewer than 250,000 time deltas that exceed 10,000 seconds.
+
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/e11fa87a-5389-4d53-bd71-9a462bc814b5" />
 
-### Histogram of range 0-1000s
+### Histogram of range 0-1000 s
+
+Analyzing the histogram of the 0-1000 s range, we can see that the majority (more thant 3.5 mln.)  of time deltas fall within the 0-25 s time difference.
 
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/b2608f3a-9f04-4df6-bfce-8a759af3b3d2" />
 
-### Histogram of range 0-100s
+### Histogram of range 0-100 s
+
+In our analysis of the smaller range histogram (0-100 seconds), we observe that the majority of time deltas—over 1.75 million—fall within the 0-2.5 second range. Additionally, approximately 0.8 million time deltas are found in the 10-12.5 second interval. This data suggests that vessels send signals frequently, primarily within the 0-12.5 second timeframe.
 
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/946c6ebd-2b34-411f-8543-ff39f51f6352" />
 
-### Histogram of range 0-20
+### Histogram of range 0-20 s
+
+In the most zoomed-in histogram, we can observe that the trend remains consistent. The most common time difference between two subsequent points is between 0-2.5 seconds and 10-12.5 seconds, with over 2.5 million occurrences of those time differences.
 
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/5da6eb58-84e8-43c6-b8cc-de0dd22d261b" />
+
+### Conclusion
+
+In most cases, vessels send signals frequently within a 0 to 2.5-second time interval. However, there can be instances where the time between two subsequent timestamps for a specific vessel exceeds 10,000 seconds, and in some cases, it may reach up to 60,000 seconds. The histogram indicates that the majority of occurrences fall within the 0 to 12.5-second interval and up to 60 seconds. The remaining time differences can be considered as outliers, and we should investigate further to understand what caused such prolonged periods between subsequent timestamps.
 
 
 
