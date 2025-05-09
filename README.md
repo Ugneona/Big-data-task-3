@@ -2,7 +2,7 @@
 #### By Dominykas Venclovas, Ugnė Kniukštaitė, Paulina Leščinskaitė
 ## Database setup
 
-The MongoDB Docker Compose was used to create the database. The setup was sharding, using 10 containers: configuration server, mongos router, and 8 shards. Sharding setup is left as default, based on MMSI value (so all records of one ship stay in one shard). To start the project, having set up Docker and Docker Compose, use the command:
+The MongoDB Docker Compose was used to create the database. The setup was sharding, using 6 containers: configuration server, mongos router, and 4 shards. Sharding setup is left as default, based on MMSI value (so all records of one ship stay in one shard). To start the project, having set up Docker and Docker Compose, use the command:
 ```
 docker-compose up -d
 ```
